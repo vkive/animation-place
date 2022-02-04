@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Triangle With Hover Effect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="scene">
+            <div class="sun"></div>
+            <div class="bg">
+                <img src="img/police_car.gif" class="car1">
+                <img src="img/police_car.gif" class="car2">
+            </div>
+        </section>
+        <script>
+            const sun = document.querySelector('.sun');
+            const body = document.querySelector('body');
+            sun.onclick=function(){
+                body.classList.toggle('dark');
+            }
+        </script>
+    </body>
+</html>
